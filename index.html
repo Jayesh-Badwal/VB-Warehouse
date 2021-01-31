@@ -85,11 +85,21 @@
                 for (var i = 0; i < data.feed.entry.length; ++i) {
                     var myData_map, myData_order;
 
-                    trHTML += '<tr><td>' + data.feed.entry[i].gsx$orderid.$t + 
+                    trHTML += '<tr><td>' + data.feed.entry[i].gsx$teamid.$t +
+                              '</td><td>' + data.feed.entry[i].gsx$uniqueid.$t +
+                              '</td><td>' + data.feed.entry[i].gsx$orderid.$t + 
                               '</td><td>' + data.feed.entry[i].gsx$item.$t + 
                               '</td><td>' + data.feed.entry[i].gsx$priority.$t + 
                               '</td><td>' + data.feed.entry[i].gsx$quantity.$t + 
-                              '</td><td>'  + data.feed.entry[i].gsx$city.$t + 
+                              '</td><td>' + data.feed.entry[i].gsx$city.$t + 
+                              '</td><td>' + data.feed.entry[i].gsx$longitude.$t +
+                              '</td><td>' + data.feed.entry[i].gsx$latitude.$t +
+                              '</td><td>' + data.feed.entry[i].gsx$orderdispatched.$t +
+                              '</td><td>' + data.feed.entry[i].gsx$ordershipped.$t +
+                              '</td><td>' + data.feed.entry[i].gsx$ordertime.$t +
+                              '</td><td>' + data.feed.entry[i].gsx$dispatchtime.$t +
+                              '</td><td>' + data.feed.entry[i].gsx$shippingtime.$t +
+                              '</td><td>' + data.feed.entry[i].gsx$timetaken.$t +
                               '</td></tr>';
 
                 }
